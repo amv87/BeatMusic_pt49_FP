@@ -1,81 +1,37 @@
-# WebApp boilerplate with React JS and Flask API
+# BeatMusic
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+The definitive music app. BeatMusic allows you to connect with people through the power of music.
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+You can navigate our extensive music library, discover our channels, or get perfect music recommendations thanks to our AI.
+Connect with all your friends: check out their favorite music, discover new music through them, and get an instant music match based on your preferences.
+Find new people alike in our channels and get in the conversation.
 
-### 1) Installation:
+BeatMusic is made for you, by you.
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+### Utilities
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
+The app is connected to the Spotify API. This allows the admins to add new artists, albums, songs, etc. to the database in a simple process, just by searching for them and clicking on "add".
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+The app is also connected to the ChatGPT API, giving the users the power to discover new music they may like by choosing a selected genre.
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+### Languages, Tools, and Frameworks
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+The main languages and frameworks we've used for the development of our app have been: Python, React, JavaScript, JWT, SQL Alchemy, Bootstrap, HTML5, and CSS.
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+Some tools we've used for testing, design, and organization purposes have been: Postman, Slack, Trello, Figma, and Photoshop.
 
-### Undo a migration
+### Future Updates
 
-You are also able to undo a migration by running
+In the near future, we would like to add several functionalities to our app:
 
-```sh
-$ pipenv run downgrade
-```
-
-### Backend Populate Table Users
-
-To insert test users in the database execute the following command:
-
-```sh
-$ flask insert-test-users 5
-```
-
-And you will see the following message:
-
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
-
-### **Important note for the database and the data inside it**
-
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
-
-### Front-End Manual Installation:
-
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
-
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
+- Feed Section: It'll give the ability to users to express their thoughts about their favorite artist's last album, comment on their friends' publications, or post a picture they've taken at the last festival they've been.
+- Channels: An open forum in a variety of topics where users can give their opinion, interact with each other, and meet new people through them.
+- Improvements on AI: Music suggestions personalized for the user, based on the music they already like.
+- Store: LPs are back to stay. We'd like to benefit from that and add a store with a broad selection of artists that'll bring back revenue. The process will be simple and will be embedded into the app.
+- Playlists: We want to give users the ability to create personalized playlists they can share with their friends to be listened in their favorite music app.
 
 ### Contributors
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+This app has been made possible by the hands and minds of [amv87](https://github.com/amv87) and [DanielMF89](https://github.com/DanielMF89), with sheer determination and passion. 
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+We hope you like it, and we can't wait to hear from you. So please, don't hesitate on sending us feedback and share your thoughts with us.
